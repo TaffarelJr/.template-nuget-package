@@ -1,0 +1,11 @@
+####### Imperative, present tense: "change" -- not "changed" or "changes"
+####### Type: build|chore|ci|docs|feat|fix|infra|perf|refactor|revert|style|test
+####### Don't capitalize the first letter; no dot (.) at the end
+<type>[(optional scope)]: <subject>
+
+[optional body]
+
+[BREAKING CHANGE: ]
+
+####### https://www.conventionalcommits.org/
+####### https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
