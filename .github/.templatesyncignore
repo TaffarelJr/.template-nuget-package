@@ -1,6 +1,0 @@
-# These files should not be copied down from the template:
-
-.github/FUNDING.yml
-.github/ISSUE_TEMPLATE/config.yml
-.github/pull_request_template.md
-CODE_OF_CONDUCT.md

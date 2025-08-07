@@ -6,29 +6,27 @@ body:
   - type: markdown
     attributes:
       value: >
-        Thanks for taking the time to help us provide more value! 🤗
-        Please see
-        [`CONTRIBUTING.md`](https://github.com/TaffarelJr/.template-nuget-package/blob/main/CONTRIBUTING.md#how-do-i-submit-a-good-enhancement-suggestion)
-        for more information on writing a good enhancement suggestion.
+        Thanks for helping us add more value! 🤗 See the
+        [`CONTRIBUTING.md`](https://github.com/TaffarelJr/.template-NuGet/blob/main/CONTRIBUTING.md#how-do-i-submit-a-good-enhancement-suggestion)
+        file for tips on writing an effective enhancement suggestion.
 
   - type: checkboxes
     id: prerequisites
     attributes:
       label: Prerequisites
       description: >
-        Please make sure these options have been tried
-        before submitting a new idea or enhancement suggestion.
+        Please check these boxes before submitting a feature request.
       options:
         - label: >
             I've searched the
-            [Documentation](https://github.com/TaffarelJr/.template-nuget-package/tree/main/docs)
-            and [Wiki](https://github.com/TaffarelJr/.template-nuget-package/wiki)
+            [Documentation](https://github.com/TaffarelJr/.template-NuGet/tree/main/docs)
+            and [Wiki](https://github.com/TaffarelJr/.template-NuGet/wiki)
             for information on this topic,
             and I'm sure it's not currently available.
           required: true
         - label: >
             I've searched and/or posted in the
-            [Discussions](https://github.com/TaffarelJr/.template-nuget-package/discussions)
+            [Discussions](https://github.com/TaffarelJr/.template-NuGet/discussions)
             about this enhancement.
           required: true
         - label: >
@@ -38,7 +36,7 @@ body:
           required: true
         - label: >
             I've searched the existing
-            [Issues](https://github.com/TaffarelJr/.template-nuget-package/issues)
+            [Issues](https://github.com/TaffarelJr/.template-NuGet/issues)
             and this enhancement has not been suggested yet.
           required: true
 
@@ -46,7 +44,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please describe the purpose and value of the enhancement.
+      description: Describe the purpose and value of this enhancement.
       placeholder: Description
     validations:
       required: true
@@ -55,7 +53,7 @@ body:
     id: proposal
     attributes:
       label: API Proposal
-      description: Please provide the specific API signature you're proposing.
+      description: Provide the specific API signature you're proposing.
       placeholder: API proposal
       value: |
         ```csharp
@@ -74,10 +72,8 @@ body:
     attributes:
       label: API Usage
       description: >
-        Please provide code examples that demonstrate
-        how the proposed API changes are meant to be used.
-        This will help determine whether the API has the right "shape"
-        to be functional, performant, and usable.
+        Show code examples of how your proposed API would be used.
+        This helps us assess if the API is functional and intuitive.
       placeholder: API usage
       value: |
         ```csharp
@@ -92,9 +88,8 @@ body:
     attributes:
       label: Alternative Designs
       description: >
-        Please provide alternative designs, if applicable.
-        For example instead of providing new APIs,
-        an option might be to change the behavior of an existing API.
+        Describe any alternative approaches you've considered.
+        For example, could existing APIs be modified instead?
       placeholder: Alternative designs
     validations:
       required: false
@@ -104,9 +99,8 @@ body:
     attributes:
       label: Risks
       description: >
-        Please mention any risks that the API proposal might entail
-        (to the best of your knowledge) -
-        such as breaking changes, performance regressions, etc.
+        Mention any potential risks with this proposal,
+        such as breaking changes or performance impacts.
       placeholder: Risks
     validations:
       required: false
