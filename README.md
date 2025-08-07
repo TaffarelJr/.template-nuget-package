@@ -1,6 +1,6 @@
 # NuGet Template Repository <!-- omit from toc -->
 
-[![codecov](https://codecov.io/gh/TaffarelJr/.template-NuGet/graph/badge.svg)](https://codecov.io/gh/TaffarelJr/.template-NuGet)
+[![codecov](https://codecov.io/gh/TaffarelJr/.template-nuget-package/graph/badge.svg)](https://codecov.io/gh/TaffarelJr/.template-nuget-package)
 
 This is a template repo that contains the default configuration
 for building and publishing a single NuGet package.
@@ -122,7 +122,7 @@ flowchart TB
 
 ## Code Coverage Details
 
-[![Grid](https://codecov.io/gh/TaffarelJr/.template-NuGet/graphs/tree.svg)](https://codecov.io/gh/TaffarelJr/.template-NuGet)
+[![Grid](https://codecov.io/gh/TaffarelJr/.template-nuget-package/graphs/tree.svg)](https://codecov.io/gh/TaffarelJr/.template-nuget-package)
 
 <!-- Source Code URIs -->
 

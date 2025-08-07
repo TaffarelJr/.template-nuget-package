@@ -1,6 +1,6 @@
 # Creating a New NuGet Package Repo <!-- omit in toc -->
 
-NuGet package repos use the [`.template-NuGet`][template] repo
+NuGet package repos use the [`.template-nuget-package`][template] repo
 as their base template.
 Follow these steps to create a new repo derived from it.
 
@@ -47,15 +47,15 @@ The following settings must be configured manually:
 ## 3. Clone the repo
 
 Clone the repo locally and open it in Visual Studio Code.
-The [`.template-NuGet`][template] repo needs to be added as an upstream remote
+The [`.template-nuget-package`][template] repo needs to be added as an upstream remote
 so the template sync can import the commits to the new repo
-with those in the [`.template-NuGet`][template] repo.
+with those in the [`.template-nuget-package`][template] repo.
 Execute the following commands:
 
 ```bash
 # May need to configure SSH key
 git config remote.pushdefault origin
-git remote add template git@github.com:TaffarelJr/.template-NuGet.git
+git remote add template git@github.com:TaffarelJr/.template-nuget-package.git
 git fetch template
 git checkout -B main template/main
 git config commit.template .gitmessage
@@ -63,13 +63,13 @@ git config commit.template .gitmessage
 
 ## 4. Customize template files
 
-Some files that were synced from the [`.template-NuGet`][template] repo
+Some files that were synced from the [`.template-nuget-package`][template] repo
 need to be customized for this new repo.
 
 - Delete the following files that will
-  reside only in the [`.template-NuGet`][template] repo:
+  reside only in the [`.template-nuget-package`][template] repo:
   - `_Checklist.md`
-- Find all instances of `TaffarelJr/.template-NuGet` in the repo
+- Find all instances of `TaffarelJr/.template-nuget-package` in the repo
   - Replace them with `TaffarelJr/<new repo name>` in **ONLY** these files:
     - `CONTRIBUTING.md`
     - `SECURITY.md`
@@ -94,17 +94,16 @@ to meet the needs of the new repo:
 ## 6. Override repo settings
 
 Most of the settings in the `settings.yml` file
-are appropriate to inherit from the [`.template-NuGet`][template] repo.
+are appropriate to inherit from the [`.template-nuget-package`][template] repo.
 Only a few of them need to be overridden in the new template repo.
 
 Replace the contents of the file with the following,
 filling in the values as indicated:
 
 ```yaml
-_extends: .template-NuGet
+_extends: .template-nuget-package
 
 repository:
-
   #─────────────────────────────────────────────────────────────────────────────
   # "About" section (on Home Page)
   # https://github.com/repository-settings/app/blob/master/docs/plugins/repository.md
@@ -160,4 +159,4 @@ and click `Run workflow`. The process should complete with no changes.
 
 <!-- GitHub Repo URIs -->
 
-[template]: https://github.com/TaffarelJr/.template-NuGet
+[template]: https://github.com/TaffarelJr/.template-nuget-package

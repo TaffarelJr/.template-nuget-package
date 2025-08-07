@@ -103,9 +103,9 @@ from the [Remark][remark] repo.
 
 <!-- GitHub Repo URIs -->
 
-[discussions]: https://github.com/TaffarelJr/.template-NuGet/discussions
-[issues]: https://github.com/TaffarelJr/.template-NuGet/issues
-[wiki]: https://github.com/TaffarelJr/.template-NuGet/wiki
+[discussions]: https://github.com/TaffarelJr/.template-nuget-package/discussions
+[issues]: https://github.com/TaffarelJr/.template-nuget-package/issues
+[wiki]: https://github.com/TaffarelJr/.template-nuget-package/wiki
 
 <!-- Public URIs -->
 
