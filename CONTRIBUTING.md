@@ -3,14 +3,14 @@
 First off, thanks for taking the time to contribute! ❤️
 
 All types of contributions are encouraged and valued.
-See the [Table of Contents](#table-of-contents) for different ways to help,
+See the [Table of Contents](#table-of-contents) below for different ways to help,
 along with details about how to work in this project.
 Please make sure to read the relevant sections before making your contribution,
-it'll make the experience a lot smoother.
-We look forward to your contributions! 🎉
+as it'll make the experience a lot smoother.
+We look forward to your help! 🎉
 
 > And if you like the project, but don't have time to contribute, that's fine.
-> There are other easy ways to support the project and show your appreciation,
+> There are other easy ways to support it and show your appreciation,
 > which we'd also be very happy about:
 >
 > - Star the project ⭐
@@ -18,9 +18,10 @@ We look forward to your contributions! 🎉
 > - Refer this project in _your_ project's readme
 > - Mention this project at local meetups and tell your friends/colleagues
 
-#### Table of Contents: <!-- omit from toc -->
+#### Table of Contents <!-- omit from toc -->
 
 - [Code of Conduct](#code-of-conduct)
+- [Style Guides](#style-guides)
 - [I Have a Question](#i-have-a-question)
 - [I Want To Contribute](#i-want-to-contribute)
   - [Reporting Bugs](#reporting-bugs)
@@ -35,9 +36,6 @@ We look forward to your contributions! 🎉
   - [Merging Pull Requests](#merging-pull-requests)
   - [Blocking Pull Request Merging](#blocking-pull-request-merging)
 - [Your First Code Contribution](#your-first-code-contribution)
-- [Styleguides](#styleguides)
-  - [Vertical Rulers](#vertical-rulers)
-  - [Commit Messages](#commit-messages)
 - [Attribution](#attribution)
 
 ## Code of Conduct
@@ -45,7 +43,13 @@ We look forward to your contributions! 🎉
 This project and everyone participating in it
 is governed by the [Code of Conduct][coc].
 By participating, you're expected to uphold this code.
-Please report unacceptable behavior to the repository owners.
+Please report unacceptable behavior to the repo owners.
+
+## Style Guides
+
+This project follows a set of style guides to ensure code quality and consistency.
+For detailed information, please refer to the [Style Guides][styleGuides] document.
+All contributors are expected to follow these guidelines when submitting code changes.
 
 ## I Have a Question
 
@@ -137,10 +141,10 @@ Once it's filed:
 - The project team will label the issue accordingly.
 - A team member will try to reproduce the issue with your provided steps.
 - If there are no reproduction steps or no obvious way to reproduce the issue,
-  the team will ask you for those steps and mark the issue as `needs-repro`.
-  Bugs with the `needs-repro` tag will not be addressed
+  the team will ask you for those steps and mark the issue as `needs repro`.
+  Bugs with the `needs repro` tag will not be addressed
   until they're able to be reproduced.
-- If the team is able to reproduce the issue, it will be marked `needs-fix`,
+- If the team is able to reproduce the issue, it will be marked `needs fix`,
   as well as possibly other tags (such as `critical`),
   and the issue will be left to be
   [implemented by someone](#your-first-code-contribution).
@@ -173,6 +177,8 @@ to understand your suggestion and find related suggestions.
 
 Enhancement suggestions are tracked as [Issues][issues],
 _after receiving approval in the [Discussions][discussions]_.
+We recommend starting with a discussion to get initial feedback
+and decide on the best solution before creating a formal issue.
 
 - Open a new [Feature Request][newFeature].
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
@@ -189,28 +195,23 @@ _after receiving approval in the [Discussions][discussions]_.
 
 Changes will be merged if they improve the project in some way.
 All contributions are made via
-a [pull request (PR) from a _fork_ of the repo][ghFork]
-rather than through direct commits or PRs from branches _in_ the repo.
-The pull requests are merged after review and approval from a code owner.
+a [pull request (PR) from a _fork_ of the repo][fork]
+rather than through direct commits or PRs from other branches _in_ the repo.
+
+Rebasing is encouraged when keeping your fork branch up-to-date
+(rather than merging `main` into your branch)
+because it keeps the commit history clean.
 
 ### Quick Code Review Rules
 
+- Keep PRs short and sweet! This makes them easier to review.
 - Don't mix unrelated changes in one pull request.
   For example, a code style change should never be mixed with a bug fix.
-  Keep PRs short and sweet!
-- All changes should follow the existing code style;
-  we favor consistency over any specific convention.
-  This is enforced by the analyzers and style rules embedded in the project.
-  They should be picked up by your IDE—address any warnings before submitting.
-- Make sure lines of code are relatively short,
-  following the [Vertical Rulers](#vertical-rulers) section.
-- Make sure Git commit messages follow the rules
-  outlined in the [Commit Messages](#commit-messages) section.
+- All changes should follow the [Style Guides][styleGuides].
 - Use `Draft` pull requests for changes you're still working on,
   but want early CI loop feedback for.
   When you think your changes are ready for review,
-  [change the status][ghStatus] of your pull request.
-- Rebasing is encouraged, to keep a clean history of changes.
+  [change the status][status] of your pull request.
 
 ### Pull Request Ownership
 
@@ -230,8 +231,11 @@ when the following conditions have been met:
 - The PR has been approved by at least one code owner
   and any other objections are addressed.
   - You can request another review from the original reviewer.
-- The PR successfully builds and passes all tests
+- The PR successfully builds and passes all checks
   in the Continuous Integration (CI) system.
+
+PRs should never be squashed or rebased when merging.
+Including merge commits helps when analyzing the change history.
 
 ### Blocking Pull Request Merging
 
@@ -243,109 +247,41 @@ selecting the option under the reviewers section.
 ## Your First Code Contribution
 
 Issues marked with a `good first issue` or `help wanted` label
-can be a great place to start if you're looking to start contributing.
+can be a great place to start if you're interested in contributing.
+These issues are typically more straightforward and well-defined,
+making them suitable for newcomers to the project.
 
-## Styleguides
-
-Required code styling is enforced
-by the analyzers and style rules embedded in the project.
-They should be picked up by your IDE.
-Make sure to address any errors, warnings, or messages before submitting a PR.
-
-Beyond that, try to make the code as readable as possible.
-Functions should be small. Classes and members should be documented.
-Favor explicit over implicit code.
-
-Code comments can be very helpful to explain _why_
-a chunk of code is doing what it's doing;
-but if you're tempted to add code comments to explain _what_ it's doing,
-that's a good sign that the code should be refactored.
-Code should be self-documenting in that regard.
-
-### Vertical Rulers
-
-In order to facilitate side-by-side code comparisons,
-this project encourages lines of code to be kept relatively short:
-
-- **Up to 80 characters** is the ideal maximum line width.
-  Wrap lines of code by this point as often as possible.
-- **Up to 100 characters** is fine, if it's more asthetically pleasing
-  than wrapping would be.
-- **Up to 120 characters** _can be_ acceptable
-- if the end of the line doesn't change often or is common boilerplate
-  (such as cancellation tokens or other standard, optional function parameters).
-- **Over 120 characters** is not acceptable, and must be wrapped
-  unless there's no other choice: e.g., a long URL link in a Markdown file.
-
-To facilitate this, it's recommended to display vertical rulers
-in your IDE of choice:
-
-- **Visual Studio**: Install the [Editor Guidelines][guidelines] extension.
-  Vertical rulers are defined in the `.editorconfig` file,
-  and will appear automatically.
-
-- **Visual Studio Code**: Unfortunately, manual configuration is required.
-  Go to `Settings` -> `Rulers` and add something like the following:
-  ```json
-  "editor.rulers": [
-    // Colors are in RGBA format
-    { "column": 80, "color": "#00ff0050" },
-    { "column": 100, "color": "#ffff0075" },
-    { "column": 120, "color": "#8b0000ff" }
-  ],
-  ```
-
-### Commit Messages
-
-This repo uses [Conventional Commits][cc]
-to standardize the format of commit messages.
-This enables the automation of things like versioning
-and the generation of changelogs & release notes.
-
-If you're new to or unfamiliar with [Conventional Commits][cc],
-this [Cheat sheet by Bengt Brodersen][ccCheat] can help with the basics.
-
-To facilitate this, a default Git message template is included in the project.
-You can activate it by running the following command from the repository root:
-
-```bash
-git config commit.template .gitmessage
-```
-
-Afterward, whenever you run `git commit` (without the `-m` switch)
-the template should be displayed in your configured text editor.
-(Other Git tooling should pick it up as well.)
-Simply replace the template with your formatted commit message, and save it.
+When picking up an issue to work on,
+leave a comment on the issue to let others know you're working on it
+to avoid duplication of effort.
 
 ## Attribution
 
 This guide is based on the [contributing.md][contrib] website.
 [Make your own][contribEx]!
 
-<!-- Source Footnotes -->
+<!-- Source Code URIs -->
 
-[docs]: /docs
 [coc]: /CODE_OF_CONDUCT.md
+[docs]: /docs
 [security]: /SECURITY.md
+[styleGuides]: /docs/StyleGuides.md
 
-<!-- GitHub Footnotes -->
+<!-- GitHub Repo URIs -->
 
-[discussions]: https://github.com/TaffarelJr/.template-nuget-package/discussions
-[issues]: https://github.com/TaffarelJr/.template-nuget-package/issues
-[newBug]: https://github.com/TaffarelJr/.template-nuget-package/issues/new?template=01_bug_report.yml
-[newFeature]: https://github.com/TaffarelJr/.template-nuget-package/issues/new?template=03_feature_request.yml
-[newIssue]: https://github.com/TaffarelJr/.template-nuget-package/issues/new?template=02_performance_issue.yml
-[wiki]: https://github.com/TaffarelJr/.template-nuget-package/wiki
+[discussions]: https://github.com/TaffarelJr/.template-NuGet/discussions
+[issues]: https://github.com/TaffarelJr/.template-NuGet/issues
+[newBug]: https://github.com/TaffarelJr/.template-NuGet/issues/new?template=01_bug_report.yml
+[newFeature]: https://github.com/TaffarelJr/.template-NuGet/issues/new?template=03_feature_request.yml
+[newIssue]: https://github.com/TaffarelJr/.template-NuGet/issues/new?template=02_performance_issue.yml
+[wiki]: https://github.com/TaffarelJr/.template-NuGet/wiki
 
-<!-- Public Footnotes -->
+<!-- Public URIs -->
 
-[cc]: https://www.conventionalcommits.org
-[ccCheat]: https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
 [contrib]: https://contributing.md/
 [contribEx]: https://contributing.md/example/
-[ghFork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
-[ghStatus]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request
-[guidelines]: https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview
+[fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 [licecap]: https://www.cockos.com/licecap
 [silentcast]: https://github.com/colinkeenan/silentcast
 [so]: https://stackoverflow.com/
+[status]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request
